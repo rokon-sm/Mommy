@@ -7,9 +7,8 @@
         "start": "node index.js"
     },
     "dependencies": {
-        "@quoriel/db": "^3.1.0",
+        "@nationdex/qdb": "git+https://github.com/nationdex/qdb.git#main",
         "@tryforge/forgescript": "^2.8.0",
-        "dotenv": "^18.0.9",
-        "lmdb": "^3.5.9"
+        "dotenv": "^18.0.9"
     }
 }

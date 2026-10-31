@@ -1,5 +1,5 @@
 const { ForgeClient, LogPriority } = require("@tryforge/forgescript");
-const { QuorielDB } = require("@quoriel/db");
+const { QuorielDB } = require("@nationdex/qdb");
 require("dotenv").config();
 
 const db = new QuorielDB({
@@ -124,6 +124,7 @@ const client = new ForgeClient({
     logLevel: LogPriority.High
 });
 
+db.commands.load('./handlers/db');
 client.functions.load('./functions');
 client.commands.load('./handlers/core');
 client.applicationCommands.load('./commands');
